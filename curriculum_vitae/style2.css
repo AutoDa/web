@@ -1,0 +1,56 @@
+div,ul,li{
+    padding: 0px;
+    border: 0px;
+    margin: 0px;
+}
+ul li{
+    float: left;
+    height: 20px;
+    font-size: 20px;
+    margin-right: 20px;
+}
+body{
+    font-family: 黑体;
+}
+div{
+}
+ul{
+    list-style-type: none;
+    height: 20px;
+}
+.ul2{
+    height: 120px;
+}
+.ul2 li{
+    float: none;
+    height: 40px;
+    margin-bottom: 20px;
+}
+
+a{
+    color: blue;
+    text-decoration:  blue;
+}
+.title{
+    float: left;
+    height: 802px;
+    width: 167px;
+    padding-left: 68px;
+    padding-top: 68px;
+    background: url("https://thumbnail0.baidupcs.com/thumbnail/6ccaedb7fa3a8f6081c91871ecedbce9?fid=660900141-250528-212642729415205&time=1528851600&rt=sh&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-7W3BQC5n7vKPN%2B5HHZDD%2B26f%2F1M%3D&expires=8h&chkv=0&chkbd=0&chkpc=&dp-logid=3789784922067809934&dp-callid=0&size=c710_u400&quality=100&vuk=-&ft=video") repeat;
+    font-family: 微软雅黑;
+    color: #FFFFFF;
+    font-size: 34px;
+    font-weight: 900;
+}
+.title2{
+    font-size: 32px;
+    font-weight: 600;
+    height: 32px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.content{
+    margin-left: 20px;
+    float: left;
+}

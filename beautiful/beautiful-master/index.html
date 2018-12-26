@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="css/index.css"  type="text/css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <script type="text/javascript" src="http://www.w3school.com.cn/jquery/jquery.js"></script>
+<script>
+    $(document).ready(function(){
+        $(".hover").css("display","none");
+        $(".team img").hover(function (){
+                $(".hover").css("display","block")
+                $(".hover").offset({top:$(this).offset().top,left:$(this).offset().left});
+
+        },
+        function () {
+            //$(".hover").css("display","none");
+        }
+        )
+    })
+</script>
+
+</head>
+<body>
+<div class="header">
+<h3>Hello World</h3>
+    <p>China is speeding up strategic plan,standards,traffic rules,laws and regulations<br>
+        on accident-incurred liabilities for its smart car industry,Economic Information<br>
+        Daily reported Thursday.
+    </p>
+    <div>
+        <p>CREATE YOUR ACCOUNT</p>
+        <p>IT IS ABSOLUTELY FREE</p>
+     <input type="text" id="userid" placeholder="denis@getcraftwork.com"/>
+        <input type="password" id="password" placeholder="Create your password"/>
+        <button id="sign_up">SIGN UP</button>
+    </div>
+</div>
+<div class="functions">
+<h5>Boatloads of Awesome</h5>
+    <h3>Ready-made,customizable,HTML<br>landing page sections</h3>
+    <div>
+    <div class="function">
+        <div class="img">
+        <img src="img/phone.png" align="left">
+        </div>
+        <span class="title">Mobile First</span><br><br>
+        <p class="describe">All modulz are built mobile-first for maximum </p>
+              <p>device compatibility.</p>
+    </div>
+        <div class="function">
+            <div class="img">
+                <img src="img/access.png" align="left">
+            </div>
+            <span class="title">Accessibility</span><br><br>
+            <p class="describe">Support for IE8,mobile and tablet devices,</p>
+            <p>screenreaders and color blind.</p>
+        </div>
+        <div class="function">
+            <div class="img">
+                <img src="img/flund.png" align="left">
+            </div>
+            <span class="title">Fluid Typography</span><br><br>
+            <p class="describe">On different screen sizes,fonts automagically</p>
+            <p>scale with the viewport.</p>
+        </div>
+        <div class="function">
+            <div class="img">
+                <img src="img/custom.png" align="left">
+            </div>
+            <span class="title">Customization</span><br><br>
+            <p class="describe">Make any design your own using the Style<br>Editor.Personalize fonts,colors,and layouts to<br>create the custom look you want.</p>
+
+        </div>
+    </div>
+</div>
+<div class="product">
+    <p>Supportive policies for China's smart car</p>
+    <p>China will come up with its own smart car standards, traffic rules, laws and regulations relating to safety, according to the China Industry Innovation Alliance for the Intelli-gent and Connected Vehicles.</p>
+    <button>CHECK OUT FEATURES</button>
+    <button>TRY PRODUCT FOR FREE</button>
+</div>
+<div  class="awesome">
+<h3>Try Our Awesome Products</h3>
+    <p>
+        <img src="img/sing.png" /><br>
+        Li Jun, a China Academy of Engi-
+        neering academician and also
+        director of the alliance's experts'
+        committee, said that China will
+        also launch design guidance for
+        smart cars, smart map arch-
+        itecture and standards for test
+        grounds.
+    </p>
+    <p>
+        <img src="img/hero.png" /><br>
+        Li said the smart car industry is
+        able to enlarge the current car
+        industry by 1 trillion yuan ($158.15
+        billion ) and also able to boost fast
+        development in 5G, internet of
+        cars, big data, artificial intelligence
+        and new-energy vehicles.
+   </p>
+    <p>
+        <img src="img/pon.png" /><br>
+        Zhang Junyi, a partner with NIO
+        Capital, said that the smart car is
+        the trend for the car industry and
+        China's auto sector will usher in a
+        new key development stage with
+        the improvement of infrastructure,
+        technology, policies and laws.
+    </p>
+</div>
+<div class="awesome_after">
+<img src="img/tree.png" class="left" />
+    <span>
+        <h3>Learn How to Improve Your Personal Business</h3>
+        Li Jun, a China Academy of Engineering
+        academician and also director of the
+        alliance's experts' committee, said that
+        China will also launch design guidance
+        for smart cars, smart map architecture
+        and standards for test grounds.
+    </span>
+    <span>
+    <h3>Choose Between Two Beautifully Designed Color Schemes.</h3>
+        China will come up with its own smart<br>
+        car standards, traffic rules, laws and reg-ulations relating to safety, according to the China Industry Innovation Alliance
+        <br>
+        for the Intelligent and Connected Vehicles.
+    </span>
+    <img src="img/bird.png"  style="margin-top: 80px"/>
+</div>
+<div class="hover">
+    <h3>Ethan Dutton</h3>
+    <p>SENIOR VISUAL DESIGNER</p>
+    <div>
+    <a><img src="img/social1.png" /></a>
+    <a><img src="img/social2.png" /></a>
+    <a><img src="img/social3.png" /></a>
+    </div>
+</div>
+<div class="team">
+
+    <div>
+
+    <h3>Our Awesome Crew</h3>
+    <p>Our unique online teaching style makes learning easy for everyone. Whether you<br>
+        are trying to land a new job, brush up on your skills.</p>
+        <img src="img/1.png" />
+
+
+    <img src="img/2.png" style="margin-right: 0px">
+    </img>
+    <img src="img/3.png" />
+    <img src="img/4.png" style="margin-right: 0px" />
+    </div>
+</div>
+<div class="write">
+    <div class="email">
+    <form>
+        <h3>FELL FREE TO WRITE US</h3>
+    <input type="text" value="E-mail" />
+        <input type="text" value="Subject" />
+        <textarea type="text" placeholder="Message"></textarea>
+        <input type="submit" value="SEND" />
+    </form>
+    </div>
+    <div class="contacts">
+    <h3>Contacts</h3>
+        <p>Make any design your own using the Style<br>
+        Editor.Personalize fonts,colors ,and layouts to<br>
+            create the custom look you want<br>
+        </p>
+
+            <p><img src="img/ad.png" /><div>360 King Street<br>
+                Feastrvale Trevose, PA 19057</div></p>
+            <p><img src="img/telephone.png" /><div>(755) 564-84-12</div></p>
+            <p><img src="img/message.png" /><div>youname@mail.com</div></p>
+
+    </div>
+</div>
+<div class="bottom">
+<div>
+    <ul>
+    <li>LEARN MORE</li>
+    <li>How it works?</li>
+    <li>Meeting tools</li>
+    <li>Live streaming</li>
+    <li>Contact method</li>
+    </ul>
+</div>
+    <div>
+        <ul>
+            <li>ABOUT US</li>
+            <li>About us</li>
+            <li>Features</li>
+            <li>Privacy police</li>
+            <li>Terms & Conditions</li>
+        </ul>
+    </div>
+    <div>
+        <ul>
+            <li>SUPPORT</li>
+            <li>FAQ</li>
+            <li>Contacts us</li>
+            <li>Live chat</li>
+            <li>Phone call</li>
+        </ul>
+    </div>
+    <div>
+        <ul>
+            <li>ENJOY YOUR LIFE</li>
+        </ul>
+        <p class="tools">Great web UI kit for designers,
+            freelancers or business.</p>
+        <img src="img/fly.png"/>
+        <img src="img/facebook.png" />
+        <img src="img/google.png" />
+        <img src="img/t.png" />
+        <img src="img/q.png" />
+        <img src="img/in.png" />
+    </div>
+</div>
+</body>
+</html>

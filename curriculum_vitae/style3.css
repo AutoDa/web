@@ -1,0 +1,68 @@
+div,ul,li{
+    padding: 0px;
+    border: 0px;
+    margin: 0px;
+}
+ul li{
+    float: left;
+    height: 20px;
+    font-size: 20px;
+    margin-right: 20px;
+}
+body{
+    font-family: 黑体;
+    letter-spacing: 0em;
+}
+.container{
+    width: 900px;
+    height: 405px;
+    border:2px  #eeeeee solid;
+    font-size: 10px;
+}
+div{
+    float: left;
+}
+ul{
+    list-style-type: none;
+    height: 60px;
+    width: 818px;
+    float: left;
+    border-bottom: 2px gainsboro solid;
+
+    padding-left: 10px;
+    padding-top: 10px;
+}
+ul li{
+    font-size: 10px;
+}
+.ul2 li{
+    float: none;
+}
+a{
+    color: blue;
+    text-decoration:  blue;
+}
+.title{
+    float: left;
+    height: 45px;
+    width: 900px;
+    line-height: 45px;
+    background: url("bg2.png") repeat;
+    font-family: 微软雅黑;
+    font-size: 14px;
+    color: #FFFFFF;
+    font-weight: 900;
+    text-indent: 1em;
+}
+.title2{
+    width: 60px;
+    height: 70px;
+    line-height: 70px;
+    padding-left: 10px;
+    background: url("bg3.png");
+    border-bottom: 2px gainsboro solid;
+    border-right:2px gainsboro solid ;
+}
+br{
+    display: none;
+}
