@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        ;(function (window) {
+            window.G = {};
+            function bindEvent(obj, event, fn) {
+                if (obj.attachEvent) { //ie
+                    obj.attachEvent('on' + event, function () {
+                        fn.call(obj);
+                    });
+                } else {
+                    //chrome&ff
+                    obj.addEventListener(event, fn, false);
+                }
+            }
+
+            G.getPos = function( dom ){
+                var oPos = { x : 0, y : 0 };
+                bindEvent( dom, 'mousemove', function( ev ){
+                    var oEvent = ev || event, x, y;
+                    if ( oEvent.pageX || oEvent.pageY ){
+                        x = oEvent.pageX;
+                        y = oEvent.pageY;
+                    }else {
+                        x = oEvent.clientX + document.body.scrollLeft || document.documentElement.scrollLeft;
+                        y = oEvent.clientX + document.body.scrollTop || document.documentElement.scrollTop;
+                    }
+                    x -= dom.offsetLeft;
+                    y -= dom.offsetTop;
+                    oPos.x = x;
+                    oPos.y = y;
+                } );
+                return oPos;
+            };
+
+        })(window);
+    </script>
+
+</head>
+<body>
+<canvas id="canvas" width="800" height="400" style="border: #33cc33 solid 1px "></canvas>
+<script type="text/javascript">
+
+    window.onload = function(){
+        var oCanvas = document.querySelector( "#canvas" ),
+            oGc = oCanvas.getContext( '2d' ),
+            width = oCanvas.width, height = oCanvas.height,
+            oInfo = document.querySelector( "#info" ),
+            oPos = G.getPos( oCanvas );
+        oCanvas.addEventListener( "mousemove", function(){
+            oGc.clearRect( 0, 0, width, height );
+            oGc.beginPath();
+            oGc.moveTo( oPos.x, 0 );
+            oGc.lineTo( oPos.x, height );
+            oGc.moveTo( 0, oPos.y );
+            oGc.lineTo( width, oPos.y );
+            oGc.closePath();
+            oGc.strokeStyle = '#09f';
+            oGc.stroke();
+        }, false );
+    }
+</script>
+</body>
+</html>

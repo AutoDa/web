@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<img src="../img/300.jpg" width="300" height="300" id="flower">
+<p>Canvas: </p>
+<button onclick="draw('repeat')">repeat</button>
+<button onclick="draw('repeat-x')">repeat-x</button>
+<button onclick="draw('repeat-y')">repeat-y</button>
+<button onclick="draw('no-repeat')">no-repeat</button>
+<br />
+<canvas id="canvas" width="500" height="500" style="border:1px solid #d3d3d3;">
+    Your browser does not support the HTML5 canvas
+</canvas>
+<script type="text/javascript">
+    function draw(direction){
+        var c=document.getElementById("canvas");
+        var ctx=c.getContext("2d");
+        ctx.clearRect(0,0,canvas.width,c.height);
+        var  img=document.getElementById("flower");
+        var  pat=ctx.createPattern(img,direction);
+        ctx.rect(0,0,500,500);
+        ctx.fillStyle=pat;
+        ctx.fill();
+    }
+</script>
+</body>
+</html>
