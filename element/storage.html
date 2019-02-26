@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>web 存储</title>
+</head>
+<body>
+<p>在客户端存储数据的2种新方法</p>
+<p>localStorage--没有时间限制的数据存储</p>
+<p>sessionStorage--针对一个session的数据存储</p>
+<pre>
+&lt;script type=&quot;text/javascript&quot;&gt;
+<code>localStorage.lastname=&quot;Smith&quot;;</code>
+document.write(<code>localStorage.lastname</code>);
+&lt;/script&gt;
+</pre>
+<pre>
+&lt;script type=&quot;text/javascript&quot;&gt;
+if (<code>localStorage.pagecount</code>)
+  {
+  localStorage.pagecount=Number(<code>localStorage.pagecount</code>) +1;
+  }
+else
+  {
+  <code>localStorage.pagecount</code>=1;
+  }
+document.write(&quot;Visits &quot;+ <code>localStorage.pagecount</code> + &quot; time(s).&quot;);
+&lt;/script&gt;
+</pre>
+<script>
+  if (localStorage.pagecount)
+  {
+  localStorage.pagecount=Number(localStorage.pagecount) +1;
+  }
+  else
+  {
+  localStorage.pagecount=1;
+  }
+  document.write("Visits "+ localStorage.pagecount + " time(s).");
+</script>
+
+
+<pre>
+&lt;script type=&quot;text/javascript&quot;&gt;
+<code>sessionStorage.lastname=&quot;Smith&quot;;</code>
+document.write(<code>sessionStorage.lastname</code>);
+&lt;/script&gt;
+</pre>
+<pre>
+&lt;script type=&quot;text/javascript&quot;&gt;
+if (<code>sessionStorage.pagecount</code>)
+  {
+  sessionStorage.pagecount=Number(<code>sessionStorage.pagecount</code>) +1;
+  }
+else
+  {
+  <code>sessionStorage.pagecount</code>=1;
+  }
+document.write(&quot;Visits &quot;+<code>sessionStorage.pagecount</code>+&quot; time(s) this session.&quot;);
+&lt;/script&gt;
+</pre>
+<script>
+  if(sessionStorage.pagecount)
+  {
+      sessionStorage.pagecount=Number(sessionStorage.pagecount)+1;
+  }else{
+      sessionStorage.pagecount=1;
+  }
+  document.write("Visits "+sessionStorage.pagecount+" times(s)" +
+      "this session")
+</script>
+</body>
+</html>
